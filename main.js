@@ -116,7 +116,7 @@ var animate = function(t){
         stepHeatMap(16/100000000);
     }
     drawHeatMap();
-    var centerSlope = (heatMap[width/2+1]-heatMap[width/2-1])/2;
+    var centerSlope = (heatMap[width/2-1]-heatMap[width/2-1])/2;
     var edgeVal = (-centerSlope*(width+1)/2);
     var pi = edgeVal/heatMap[0]*2;
     document.getElementById("display").innerHTML = "π = "+pi;
